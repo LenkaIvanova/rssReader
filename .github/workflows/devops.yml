@@ -24,16 +24,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Cache
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
     - name: Install npm
       run: npm ci
     - name: Build
       run: npm run build --if-present
+    - name: Quasar build
+      run: quasar build
     - run: npm test
     
