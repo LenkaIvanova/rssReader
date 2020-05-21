@@ -36,5 +36,12 @@ jobs:
     - name: Move build to rssSpa
       run: |
           cp -r dist/spa rssSpa
+    - name: Commit
+      run: |
+          git rm /r .
+          git add rssSpa
+          git config --local user.email "30lenka.ivanova@github.com"
+          git config --local user.name "Github Actions"
+          git commit -m "lenka-rss branch" -a
 
     - run: npm test
