@@ -31,5 +31,10 @@ jobs:
     - name: Install Quasar cli
       run: npm install -g @quasar/cli
     - name: Quasar build
-      run: quasar build
+      run: | 
+          quasar build
+    - name: Move build to rssSpa
+      run: |
+          cp -r dist/spa rssSpa
+
     - run: npm test
