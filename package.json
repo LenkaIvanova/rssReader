@@ -32,5 +32,15 @@
   "browserslist": [
     "last 1 version, not dead, ie >= 11"
   ],
-  "homepage": "https://LenkaIvanova.github.io/rssReader"
+  "main": ".postcssrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LenkaIvanova/rssReader.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "homepage": "https://LenkaIvanova.github.io/rssReader",
+  "bugs": {
+    "url": "https://github.com/LenkaIvanova/rssReader/issues"
+  }
 }
