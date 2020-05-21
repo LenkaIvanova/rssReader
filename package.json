@@ -9,11 +9,13 @@
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
+    "deploy": "gh-pages -d dist/spa",
     "build": "webpack"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.1",
+    "gh-pages": "^2.2.0",
     "quasar": "^1.0.0",
     "rss-parser": "^3.7.6",
     "rss-to-json": "^1.0.5"
@@ -29,5 +31,6 @@
   },
   "browserslist": [
     "last 1 version, not dead, ie >= 11"
-  ]
+  ],
+  "homepage": "https://LenkaIvanova.github.io/rssReader"
 }
