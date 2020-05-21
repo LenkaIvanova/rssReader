@@ -1,5 +1,6 @@
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = function (ctx) {
   return {
